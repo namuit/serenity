@@ -12,7 +12,7 @@ module Serenity
 
     def process context
       tmpfiles = []
-      Zip::ZipFile.open(@template) do |zipfile|
+      Zip::File.open(@template) do |zipfile|
         %w(content.xml styles.xml).each do |xml_file|
           content = zipfile.read(xml_file)
 
