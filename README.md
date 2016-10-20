@@ -1,3 +1,12 @@
+# Patch
+Forked to make small tweaks. The original is at https://github.com/kremso/serenity/tree/master/showcase
+
+## Changes
+1. changed all require 'zip/zip' to require 'zip' to patch bug with rubyzip gem
+
+## Todo
+1. add paramiter to change output of file for render_odt function instead of name_of_template_output.odt
+
 Serenity is an embedded ruby for OpenOffice documents (.odt files). You provide an .odt template with ruby code inside a special markup and the data and Serenity generates the document. If you know erb all of this should sound familiar.
 
 Important Changes

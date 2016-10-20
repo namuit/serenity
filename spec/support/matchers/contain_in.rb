@@ -1,6 +1,6 @@
 # encoding: utf-8
 
-require "zip/zip"
+require "zip"
 
 module Serenity
   RSpec::Matchers.define :contain_in do |xml_file, expected|
